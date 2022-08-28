@@ -40,11 +40,14 @@
             this.panelMain = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnOrder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCategory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCustomer)).BeginInit();
+            this.panelMain.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnProduct
@@ -145,6 +148,7 @@
             // 
             // panelMain
             // 
+            this.panelMain.Controls.Add(this.pictureBox1);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(166, 50);
             this.panelMain.Name = "panelMain";
@@ -178,6 +182,16 @@
             this.panel1.Size = new System.Drawing.Size(166, 899);
             this.panel1.TabIndex = 3;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1389, 862);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // AttendantForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
@@ -192,8 +206,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnOrder)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCategory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCustomer)).EndInit();
+            this.panelMain.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -210,5 +226,6 @@
         private Panel panelMain;
         private Panel panel2;
         private Panel panel1;
+        private PictureBox pictureBox1;
     }
 }
